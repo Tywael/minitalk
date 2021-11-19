@@ -6,7 +6,7 @@
 /*   By: yalthaus <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 11:35:18 by yalthaus          #+#    #+#             */
-/*   Updated: 2021/11/14 16:58:48 by yalthaus         ###   ########.fr       */
+/*   Updated: 2021/11/19 13:33:55 by yalthaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void	sender(pid_t pid, char *str)
 				kill(pid, SIGUSR1);
 			else
 				kill(pid, SIGUSR2);
-			usleep(10);
+			usleep(100);
 		}
 		str++;
 	}
